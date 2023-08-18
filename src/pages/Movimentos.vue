@@ -1,6 +1,6 @@
 <template>
   <q-page>
-
+    Movimentos
   </q-page>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <q-page>
-
+    Estilos de luta
   </q-page>
 </template>
 

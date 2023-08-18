@@ -1,6 +1,6 @@
 <template>
   <q-page>
-
+    Boxeadores
   </q-page>
 </template>
 
