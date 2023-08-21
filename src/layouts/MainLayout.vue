@@ -5,17 +5,17 @@
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title>
-          Quasar App
+          <!-- Quasar App -->
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <!-- <div>Quasar v{{ $q.version }}</div> -->
       </q-toolbar>
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
         <q-item-label header>
-          Essential Links
+          Menu
         </q-item-label>
 
         <EssentialLink v-for="link in essentialLinks" :key="link.title" v-bind="link" />
@@ -34,46 +34,28 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
-    title: 'Docs',
-    caption: 'quasar.dev',
+    titulo: 'Pagina Inicial',
+    descricao: 'Informações gerais',
     icon: 'school',
-    link: 'https://quasar.dev'
+    rota: '/'
   },
   {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
+    titulo: 'Movimentos',
+    descricao: 'Sobre golpes e movimentos no geral',
+    icon: 'school',
+    rota: 'movimentos'
+  },
+  {
+    titulo: 'Estilos de luta',
+    descricao: 'Tecnicas de lutadores',
     icon: 'code',
-    link: 'https://github.com/quasarframework'
+    rota: 'estilosdeluta'
   },
   {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
+    titulo: 'Boxeadores',
+    descricao: 'Sobre alguns boxeadores',
     icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
+    rota: 'boxeadores'
   }
 ]
 
