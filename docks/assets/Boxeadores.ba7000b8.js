@@ -1,0 +1,1 @@
+import{Q as e}from"./QPage.fdf12260.js";import{_ as o,G as a,I as r,J as t,K as s,N as n}from"./index.fb9cd0cc.js";import"./render.1ef4f0ee.js";const c=a({name:"SobreBoxeadores"});function p(d,_,f,i,m,x){return r(),t(e,null,{default:s(()=>[n(" Boxeadores ")]),_:1})}var $=o(c,[["render",p]]);export{$ as default};
