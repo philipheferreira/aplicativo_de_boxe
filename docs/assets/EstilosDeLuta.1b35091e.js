@@ -1,1 +1,0 @@
-import{Q as t}from"./QPage.fdf12260.js";import{_ as e,I as a,J as o,K as s,N as r}from"./index.fb9cd0cc.js";import"./render.1ef4f0ee.js";const c={};function n(p,_,i,l,f,u){return a(),o(t,null,{default:s(()=>[r(" Estilos de luta ")]),_:1})}var $=e(c,[["render",n]]);export{$ as default};
