@@ -26,7 +26,7 @@
           <q-carousel-slide name="map" class="column no-wrap flex-center" :img-src="imgCarossel4">
             <q-icon name="terrain" size="56px" />
             <div class="q-mt-md text-center">
-              {{ lorem }}
+              {{ texto4 }}
             </div>
           </q-carousel-slide>
         </q-carousel>
@@ -43,7 +43,6 @@ export default {
   setup() {
     return {
       slide: ref('style'),
-      lorem: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque voluptatem totam, architecto cupiditate officia rerum, error dignissimos praesentium libero ab nemo.',
       imgCarossel1: "https://gooutside.com.br/wp-content/uploads/sites/4/2018/03/shutterstock_222253792.jpg",
       imgCarossel2: "https://www.lance.com.br/melhorpreco/wp-content/uploads/2022/09/melhor-saco-de-pancada.jpg",
       imgCarossel3: "https://stockadetraining.com.au/wp-content/uploads/2020/10/amateur-sparring-1.jpg",
@@ -51,7 +50,7 @@ export default {
       texto1: "Independente de treinar boxe todos os dias é sempre bom correr e fazer abdominais para manter o corpo ativo",
       texto2: "Quando for aplicar golpes no saco de area o ideal é manter os punhos firmes e fechados, um soco relaxado corre o risco de machucar, torcer ou fraturar a mão",
       texto3: "Para aqueles que estão iniciando no boxe sparring programados são sempre mais produtivos do que sparring que simulam lutas",
-      texto4: ""
+      texto4: "Textando o 4 texto"
     }
   }
 }

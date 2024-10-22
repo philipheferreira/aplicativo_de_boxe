@@ -12,19 +12,20 @@
             <div class="text-h6">Jab</div>
             <div class="text-subtitle2">Dificuldade do movimento</div>
             <div class="row no-wrap items-center">
-              <q-rating
-                size="18px"
-                v-model="stars[0]"
-                :max="3"
-                color="primary"
-              />
-              <span class="text-caption text-grey q-ml-sm">Facil</span>
+              <q-rating size="18px" v-model="stars[0]" :max="3" color="primary" />
+              <span class="text-caption text-grey q-ml-sm">Fácil</span>
             </div>
           </q-card-section>
 
           <q-card-section class="q-pt-none">
             {{ lorem }}
           </q-card-section>
+
+          <q-separator />
+
+          <q-card-actions>
+            <q-btn flat>Ler Mais</q-btn>
+          </q-card-actions>
         </q-card>
       </div>
 
@@ -36,19 +37,21 @@
             <div class="text-h6">Direto</div>
             <div class="text-subtitle2">Dificuldade do movimento</div>
             <div class="row no-wrap items-center">
-              <q-rating
-                size="18px"
-                v-model="stars[0]"
-                :max="3"
-                color="primary"
-              />
-              <span class="text-caption text-grey q-ml-sm">Facil</span>
+              <q-rating size="18px" v-model="stars[0]" :max="3" color="primary" />
+              <span class="text-caption text-grey q-ml-sm">Fácil</span>
             </div>
           </q-card-section>
 
           <q-card-section class="q-pt-none">
             {{ lorem }}
           </q-card-section>
+
+          <q-separator />
+
+          <q-card-actions>
+            <q-btn flat>Ler Mais</q-btn>
+          </q-card-actions>
+
         </q-card>
       </div>
 
@@ -60,12 +63,7 @@
             <div class="text-h6">Hook</div>
             <div class="text-subtitle2">Dificuldade do movimento</div>
             <div class="row no-wrap items-center">
-              <q-rating
-                size="18px"
-                v-model="stars[1]"
-                :max="3"
-                color="primary"
-              />
+              <q-rating size="18px" v-model="stars[1]" :max="3" color="primary" />
               <span class="text-caption text-grey q-ml-sm">Mediano</span>
             </div>
           </q-card-section>
@@ -73,6 +71,13 @@
           <q-card-section class="q-pt-none">
             {{ lorem }}
           </q-card-section>
+
+          <q-separator />
+
+          <q-card-actions>
+            <q-btn flat>Ler Mais</q-btn>
+          </q-card-actions>
+
         </q-card>
       </div>
 
@@ -84,12 +89,7 @@
             <div class="text-h6">Uppercut</div>
             <div class="text-subtitle2">Dificuldade do movimento</div>
             <div class="row no-wrap items-center">
-              <q-rating
-                size="18px"
-                v-model="stars[2]"
-                :max="3"
-                color="primary"
-              />
+              <q-rating size="18px" v-model="stars[1]" :max="3" color="primary" />
               <span class="text-caption text-grey q-ml-sm">Mediano</span>
             </div>
           </q-card-section>
@@ -97,8 +97,42 @@
           <q-card-section class="q-pt-none">
             {{ lorem }}
           </q-card-section>
+
+          <q-separator />
+
+          <q-card-actions>
+            <q-btn flat>Ler Mais</q-btn>
+          </q-card-actions>
+
         </q-card>
       </div>
+
+      <div class="q-pa-md row items-start q-gutter-md">
+        <q-card class="my-card">
+          <img :src="imagemGazellaPunch" />
+
+          <q-card-section>
+            <div class="text-h6">Soco da Gazella</div>
+            <div class="text-subtitle2">Dificuldade do movimento</div>
+            <div class="row no-wrap items-center">
+              <q-rating size="18px" v-model="stars[3]" :max="3" color="primary" />
+              <span class="text-caption text-grey q-ml-sm">Dificil</span>
+            </div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none">
+            {{ lorem }}
+          </q-card-section>
+
+          <q-separator />
+
+          <q-card-actions>
+            <q-btn flat>Ler Mais</q-btn>
+          </q-card-actions>
+
+        </q-card>
+      </div>
+
     </div>
   </q-page>
 </template>
@@ -110,7 +144,7 @@ export default defineComponent({
   name: "MovimentosdeLuta",
   setup() {
     return {
-      stars: [1, 2, 2],
+      stars: [1, 2, 3, 4],
       lorem:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       imagemJab:
@@ -121,6 +155,8 @@ export default defineComponent({
         "https://www.wikihow.com/images_en/thumb/d/dd/Box-Step-7.jpg/v4-460px-Box-Step-7.jpg.webp",
       imagemUppercut:
         "https://www.wikihow.com/images_en/thumb/9/95/Box-Step-8.jpg/v4-460px-Box-Step-8.jpg.webp",
+      imagemGazellaPunch:
+        "https://i.redd.it/obpotfdamns71.jpg"
     };
   },
 });
@@ -135,6 +171,7 @@ export default defineComponent({
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #cccccc;
 }
+
 .my-card {
   width: 100%;
   max-width: 250px;
