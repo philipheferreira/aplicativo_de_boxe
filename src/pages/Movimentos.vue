@@ -15,6 +15,7 @@
               <q-rating size="18px" v-model="stars[0]" :max="3" color="primary" />
               <span class="text-caption text-grey q-ml-sm">Fácil</span>
             </div>
+
           </q-card-section>
 
           <q-card-section class="q-pt-none">
@@ -23,8 +24,8 @@
 
           <q-separator />
 
-          <q-card-actions>
-            <q-btn flat>Ler Mais</q-btn>
+          <q-card-actions vertical>
+            <q-btn flat class="bg-red text-white">Ler Mais</q-btn>
           </q-card-actions>
         </q-card>
       </div>
@@ -48,8 +49,8 @@
 
           <q-separator />
 
-          <q-card-actions>
-            <q-btn flat>Ler Mais</q-btn>
+          <q-card-actions vertical>
+            <q-btn flat class="bg-red text-white">Ler Mais</q-btn>
           </q-card-actions>
 
         </q-card>
@@ -74,8 +75,8 @@
 
           <q-separator />
 
-          <q-card-actions>
-            <q-btn flat>Ler Mais</q-btn>
+          <q-card-actions vertical>
+            <q-btn flat class="bg-red text-white">Ler Mais</q-btn>
           </q-card-actions>
 
         </q-card>
@@ -100,8 +101,8 @@
 
           <q-separator />
 
-          <q-card-actions>
-            <q-btn flat>Ler Mais</q-btn>
+          <q-card-actions vertical>
+            <q-btn flat class="bg-red text-white">Ler Mais</q-btn>
           </q-card-actions>
 
         </q-card>
@@ -109,7 +110,7 @@
 
       <div class="q-pa-md row items-start q-gutter-md">
         <q-card class="my-card">
-          <img :src="imagemGazellaPunch" />
+          <img :src="imagemGazellaPunch" style="height: 187.5px" />
 
           <q-card-section>
             <div class="text-h6">Soco da Gazella</div>
@@ -126,8 +127,8 @@
 
           <q-separator />
 
-          <q-card-actions>
-            <q-btn flat>Ler Mais</q-btn>
+          <q-card-actions vertical>
+            <q-btn flat class="bg-red text-white">Ler Mais</q-btn>
           </q-card-actions>
 
         </q-card>
