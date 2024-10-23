@@ -12,7 +12,7 @@
             <div class="text-h6">Jab</div>
             <div class="text-subtitle2">Dificuldade do movimento</div>
             <div class="row no-wrap items-center">
-              <q-rating size="18px" v-model="stars[0]" :max="3" color="primary" />
+              <q-rating size="18px" v-model="stars[0]" :max="3" color="primary" readonly />
               <span class="text-caption text-grey q-ml-sm">Fácil</span>
             </div>
 
@@ -38,7 +38,7 @@
             <div class="text-h6">Direto</div>
             <div class="text-subtitle2">Dificuldade do movimento</div>
             <div class="row no-wrap items-center">
-              <q-rating size="18px" v-model="stars[0]" :max="3" color="primary" />
+              <q-rating size="18px" v-model="stars[0]" :max="3" color="primary" readonly />
               <span class="text-caption text-grey q-ml-sm">Fácil</span>
             </div>
           </q-card-section>
@@ -64,7 +64,7 @@
             <div class="text-h6">Hook</div>
             <div class="text-subtitle2">Dificuldade do movimento</div>
             <div class="row no-wrap items-center">
-              <q-rating size="18px" v-model="stars[1]" :max="3" color="primary" />
+              <q-rating size="18px" v-model="stars[1]" :max="3" color="primary" readonly />
               <span class="text-caption text-grey q-ml-sm">Mediano</span>
             </div>
           </q-card-section>
@@ -90,7 +90,7 @@
             <div class="text-h6">Uppercut</div>
             <div class="text-subtitle2">Dificuldade do movimento</div>
             <div class="row no-wrap items-center">
-              <q-rating size="18px" v-model="stars[1]" :max="3" color="primary" />
+              <q-rating size="18px" v-model="stars[1]" :max="3" color="primary" readonly />
               <span class="text-caption text-grey q-ml-sm">Mediano</span>
             </div>
           </q-card-section>
@@ -116,7 +116,7 @@
             <div class="text-h6">Soco da Gazella</div>
             <div class="text-subtitle2">Dificuldade do movimento</div>
             <div class="row no-wrap items-center">
-              <q-rating size="18px" v-model="stars[3]" :max="3" color="primary" />
+              <q-rating size="18px" v-model="stars[3]" :max="3" color="primary" readonly />
               <span class="text-caption text-grey q-ml-sm">Dificil</span>
             </div>
           </q-card-section>
