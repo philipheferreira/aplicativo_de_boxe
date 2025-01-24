@@ -30,9 +30,7 @@
           <q-separator />
 
           <q-card-actions vertical>
-            <q-btn flat class="bg-red text-white" @click="abrirModal"
-              >Ler Mais</q-btn
-            >
+            <q-btn flat class="bg-red text-white">Ler Mais</q-btn>
           </q-card-actions>
         </q-card>
       </div>
@@ -161,20 +159,15 @@
         </q-card>
       </div>
     </div>
-    <q-btn label="Abrir Modal" color="primary" @click="abrirModal" />
-    <JabModal v-model:isOpen="modalAberto" @confirm="handleConfirm" />
   </q-page>
 </template>
 
 <script>
 import { defineComponent } from "vue";
 import { ref } from "vue";
-import JabModal from "../components/Modals/boxeMoviments/jab.vue";
 export default defineComponent({
   name: "MovimentosdeLuta",
-  components: {
-    JabModal,
-  },
+  components: {},
   setup() {
     return {
       modalAberto: false,
@@ -191,14 +184,6 @@ export default defineComponent({
         "https://www.wikihow.com/images_en/thumb/9/95/Box-Step-8.jpg/v4-460px-Box-Step-8.jpg.webp",
       imagemGazellaPunch: "https://i.redd.it/obpotfdamns71.jpg",
     };
-  },
-  methods: {
-    abrirModal() {
-      this.modalAberto = true;
-    },
-    handleConfirm() {
-      console.log("Modal confirmado!");
-    },
   },
 });
 </script>
