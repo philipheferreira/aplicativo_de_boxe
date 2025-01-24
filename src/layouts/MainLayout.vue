@@ -1,8 +1,15 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated style="background-color: red;">
+    <q-header elevated style="background-color: red">
       <q-toolbar>
-        <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
+        <q-btn
+          flat
+          dense
+          round
+          icon="menu"
+          aria-label="Menu"
+          @click="toggleLeftDrawer"
+        />
 
         <q-toolbar-title>
           <!-- Quasar App -->
@@ -14,11 +21,13 @@
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
-        <q-item-label header>
-          Menu
-        </q-item-label>
+        <q-item-label header> Menu </q-item-label>
 
-        <EssentialLink v-for="link in essentialLinks" :key="link.title" v-bind="link" />
+        <EssentialLink
+          v-for="link in essentialLinks"
+          :key="link.titulo"
+          v-bind="link"
+        />
       </q-list>
     </q-drawer>
 
@@ -29,53 +38,53 @@
 </template>
 
 <script>
-import { defineComponent, ref } from 'vue'
-import EssentialLink from 'components/EssentialLink.vue'
+import { defineComponent, ref } from "vue";
+import EssentialLink from "components/EssentialLink.vue";
 
 const linksList = [
   {
-    titulo: 'Pagina Inicial',
-    descricao: 'Informações gerais',
-    icon: 'school',
-    rota: '/'
+    titulo: "Pagina Inicial",
+    descricao: "Informações gerais",
+    icon: "school",
+    rota: "/",
   },
   {
-    titulo: 'Movimentos',
-    descricao: 'Sobre golpes e movimentos no geral',
-    icon: 'school',
-    rota: 'movimentos'
+    titulo: "Movimentos",
+    descricao: "Sobre golpes e movimentos no geral",
+    icon: "school",
+    rota: "movimentos",
   },
   {
-    titulo: 'Estilos de luta',
-    descricao: 'Tecnicas de lutadores',
-    icon: 'code',
-    rota: 'estilosdeluta'
+    titulo: "Estilos de luta",
+    descricao: "Tecnicas de lutadores",
+    icon: "code",
+    rota: "estilosdeluta",
   },
   {
-    titulo: 'Boxeadores',
-    descricao: 'Sobre alguns boxeadores',
-    icon: 'chat',
-    rota: 'boxeadores'
-  }
-]
+    titulo: "Boxeadores",
+    descricao: "Sobre alguns boxeadores",
+    icon: "chat",
+    rota: "boxeadores",
+  },
+];
 
 export default defineComponent({
-  name: 'MainLayout',
+  name: "MainLayout",
 
   components: {
-    EssentialLink
+    EssentialLink,
   },
 
   setup() {
-    const leftDrawerOpen = ref(false)
+    const leftDrawerOpen = ref(false);
 
     return {
       essentialLinks: linksList,
       leftDrawerOpen,
       toggleLeftDrawer() {
-        leftDrawerOpen.value = !leftDrawerOpen.value
-      }
-    }
-  }
-})
+        leftDrawerOpen.value = !leftDrawerOpen.value;
+      },
+    };
+  },
+});
 </script>
