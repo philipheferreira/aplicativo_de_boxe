@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md q-gutter-sm">
 
-    <q-dialog v-model="alert">
+    <q-dialog v-model="isOpen">
       <q-card>
         <q-card-section>
           <div class="text-h6">Alert</div>
