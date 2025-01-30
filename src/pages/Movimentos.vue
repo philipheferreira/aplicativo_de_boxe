@@ -25,7 +25,6 @@
 
           <q-card-actions vertical>
             <q-btn flat class="bg-red text-white" @click="abrirModalJab">Ler Mais</q-btn>
-            <Movimento_jabs ref="JabsRef" />
           </q-card-actions>
         </q-card>
       </div>
@@ -131,20 +130,45 @@
       </div>
     </div>
   </q-page>
+  <Movimento_jabs ref="JabsRef" />
+  <Movimento_direto ref="DiretoRef" />
+  <Movimento_hook ref="HookRef" />
+  <Movimento_soco_da_Gazella ref="GazellaRef" />
+  <Movimento_uppercut ref="UppercutRef" />
 </template>
 
 <script>
 import { defineComponent } from "vue";
 import Movimento_jabs from '../components/MovimentsModal/jabs.vue'
+import Movimento_direto from '../components/MovimentsModal/direto.vue'
+import Movimento_hook from '../components/MovimentsModal/hook.vue'
+import Movimento_soco_da_Gazella from '../components/MovimentsModal/soco_da_Gazella.vue'
+import Movimento_uppercut from '../components/MovimentsModal/uppercut.vue'
 export default defineComponent({
   name: "MovimentosdeLuta",
   components: {
-    Movimento_jabs
+    Movimento_jabs,
+    Movimento_direto,
+    Movimento_hook,
+    Movimento_soco_da_Gazella,
+    Movimento_uppercut
   },
   methods: {
     abrirModalJab() {
       this.$refs.JabsRef.openDialog();
-    }
+    },
+    abrirModalDireto() {
+      this.$refs.DiretoRef.openDialog();
+    },
+    abrirModalHook() {
+      this.$refs.HookRef.openDialog();
+    },
+    abrirModalsocoDaGazella() {
+      this.$refs.GazellaRef.openDialog();
+    },
+    abrirModalUppercut() {
+      this.$refs.UppercutRef.openDialog();
+    },
   },
   setup() {
     return {
