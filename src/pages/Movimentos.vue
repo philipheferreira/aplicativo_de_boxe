@@ -49,7 +49,7 @@
           <q-separator />
 
           <q-card-actions vertical>
-            <q-btn flat class="bg-red text-white">Ler Mais</q-btn>
+            <q-btn flat class="bg-red text-white" @click="abrirModalDireto">Ler Mais</q-btn>
           </q-card-actions>
         </q-card>
       </div>
@@ -74,7 +74,7 @@
           <q-separator />
 
           <q-card-actions vertical>
-            <q-btn flat class="bg-red text-white">Ler Mais</q-btn>
+            <q-btn flat class="bg-red text-white" @click="abrirModalHook">Ler Mais</q-btn>
           </q-card-actions>
         </q-card>
       </div>
@@ -99,7 +99,7 @@
           <q-separator />
 
           <q-card-actions vertical>
-            <q-btn flat class="bg-red text-white">Ler Mais</q-btn>
+            <q-btn flat class="bg-red text-white" @click="abrirModalUppercut">Ler Mais</q-btn>
           </q-card-actions>
         </q-card>
       </div>
@@ -124,7 +124,7 @@
           <q-separator />
 
           <q-card-actions vertical>
-            <q-btn flat class="bg-red text-white">Ler Mais</q-btn>
+            <q-btn flat class="bg-red text-white" @click="abrirModalsocoDaGazella">Ler Mais</q-btn>
           </q-card-actions>
         </q-card>
       </div>

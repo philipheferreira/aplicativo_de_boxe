@@ -25,9 +25,18 @@
 export default {
   name: "ModalSocoDaGazella",
   data() {
-    return {};
+    return {
+      isOpen: false
+    };
   },
-  methods: {}
+  methods: {
+    openDialog() {
+      this.isOpen = true;
+    },
+    closeDialog() {
+      this.isOpen = false;
+    }
+  }
 
 }
 </script>

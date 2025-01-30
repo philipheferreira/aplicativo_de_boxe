@@ -24,9 +24,18 @@
 export default {
   name: "ModalDireto",
   data() {
-    return {};
+    return {
+      isOpen: false
+    };
   },
-  methods: {}
+  methods: {
+    openDialog() {
+      this.isOpen = true;
+    },
+    closeDialog() {
+      this.isOpen = false;
+    }
+  }
 
 }
 </script>
